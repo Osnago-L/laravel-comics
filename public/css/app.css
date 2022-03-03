@@ -1,4 +1,241 @@
-h1 {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.banner {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner img {
+  width: 80px;
+  cursor: pointer;
+}
+
+nav {
+  height: 100%;
+}
+
+nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  height: 100%;
+  margin: 0px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li:hover {
+  color: #0e7dec;
+  cursor: pointer;
+  border-bottom: 4px solid #0e7dec;
+}
+
+.jumbotron {
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-size: cover;
+  height: 450px;
+}
+
+.main {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.884);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .category {
+  background: #0e7dec;
+  color: white;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top: -20px;
+}
+
+.main .cardscont.container {
+  height: 100%;
+  padding: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 60px;
+}
+
+.main .cardscont.container span {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+button {
+  background: #0e7dec;
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  width: 200px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.blue-footer {
+  height: 200px;
+  background-color: #0e7dec;
+}
+
+.blue-footer > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.merch-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.merch-item img {
+  width: 50px;
+  height: 57px;
+  margin-right: 15px;
+}
+
+.merch-item span {
+  color: white;
+  text-transform: uppercase;
+}
+
+.map {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  height: 380px;
+  background-position: cover;
+  background-size: 100vw 400px;
+  padding: 30px 0;
+  overflow-y: hidden;
+}
+
+.map > div {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.map > div img {
+  width: 600px;
+  height: 600px;
+}
+
+.map-list {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.map-list ul {
+  margin-bottom: 15px;
+  list-style: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.map-list ul li {
+  color: grey;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.social {
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.social > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social button {
+  background: none;
+  color: inherit;
+  border: 1px solid #0e7dec;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.social .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social .social-icons span {
+  color: #0e7dec;
+  cursor: pointer;
+}
+
+.social .social-icons img {
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.cards {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards img {
+  -o-object-position: 0px 0px;
+     object-position: 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 230px;
+  cursor: pointer;
+}
+
+.cards span {
+  margin-top: 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
 }
 

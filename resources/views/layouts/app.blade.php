@@ -8,6 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    @yield('ciao')
+    @include('partials.header')
+    <main>
+        <div class="jumbotron"></div>
+        @yield('content')
+    </main>
+    @include('partials.footer')
 </body>
 </html>
